@@ -1,0 +1,23 @@
+<script>
+    'use strict'
+
+    //Js Object
+    var users={
+        name:"Ram"
+    }
+    //Json Object
+    var emp={
+        "name":"Kisan",
+        "dept":[["Sales"],['Production']]
+    }
+
+    console.log(typeof(emp));
+    var data = JSON.stringify(users)
+    console.log(typeof(data));
+
+    //convert in object
+    var abc = JSON.parse(data);
+    console.log(typeof(abc))
+
+
+</script>

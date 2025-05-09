@@ -1,0 +1,29 @@
+<script>
+    'use strict'
+
+var emp={
+    Name:"Ravi",
+    Dept:"Hr",
+    Desig:"Manager",
+    Salary:4500
+}
+
+//document.write(emp['Name'])
+//document.write(emp.Name)
+/*
+var username = emp.Name;
+var userdept = emp['Dept'];
+
+document.write(userdept)
+*/
+
+//Object Destructure 
+const{x,Dept,Desig,Salary}=emp;
+
+document.write(x," ",Salary)
+
+var user=["Ram","Mohan","Sohan","Karan"];
+
+const[a,b,c,y]=user;
+document.write(y)
+</script>
