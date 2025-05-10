@@ -1,0 +1,31 @@
+<script>
+    /*
+    function abc(dept)
+    {
+        this.name="Ravi";
+        this.dept=dept;
+
+    }
+
+    var obj = new abc("Sales");
+    console.log(obj.name)
+    console.log(obj.dept)
+    */
+
+   function emp(name,dept,desig)
+   {
+    this.names=name;
+    this.dept=dept;
+    this.desig=desig
+   }
+
+   //prototype
+   var nation = emp.prototype="Indian"
+   var emp1 = new emp("Ram","Sales","Manager");
+   var emp2= new emp("Kisan","Production","Supervisor");
+
+   var info1 = `<p>${emp1.names} ${emp1.dept} ${emp1.desig} ${nation}</p>`
+    var info2 = `<p>${emp2.names} ${emp2.dept} ${emp2.desig} ${nation}</p>`
+
+   document.write(info1,info2)
+</script>

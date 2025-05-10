@@ -1,0 +1,28 @@
+<script>
+class Vehicle{
+
+    //Constructor
+    constructor(model){
+        this.color="Red";
+        this.model=model
+    }
+
+car(name)
+{
+return `<p>Car ${name} Color ${this.color} Model ${this.model}</p>`
+}
+
+bike(name)
+{
+return `<p>Bike ${name} Color ${this.color} Model ${this.model}</p>`
+}
+
+}
+
+var alto = new Vehicle("2014");
+var passion = new Vehicle("2010");
+
+document.write(alto.car("Alto 1000"))
+document.write(passion.bike("PassionPro"))
+
+</script>

@@ -1,0 +1,32 @@
+<script>
+class Vehicle{
+
+    //Constructor
+    constructor(){
+        this.color="Red";
+  
+    }
+
+
+
+}
+
+
+class Electronics extends Vehicle{
+
+    constructor()
+    {
+        super();
+        this.model="2014"
+    }
+    laptop(name)
+    {
+        return `Laptop ${name} Color ${this.color} Model ${this.model}`
+    }
+}
+
+var dell = new Electronics();
+
+document.write(dell.laptop("Dell G Series"))
+
+</script>

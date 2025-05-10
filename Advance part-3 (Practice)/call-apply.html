@@ -1,0 +1,37 @@
+<script>
+
+    var emp={
+        mydata:function(nationality,zone){
+            return `<p>${this.Name} ${this.Desig} ${nationality} ${zone}</p>`
+        }
+    }
+    var emp1={
+        Name:"Ravi",
+        Age:30,
+        Dept:"Sales",
+        Desig:"Manager",
+        
+    }
+
+    var emp2={
+        Name:"Mohan",
+        Age:30,
+        Dept:"Production",
+        Desig:"Supervisor"
+    }
+
+    var emp3={
+        Name:"Sachin",
+        Age:30,
+        Dept:"Finishing",
+        Desig:"General Manager"
+    }
+
+
+    var data1 = emp.mydata.apply(emp1,["Indian","South Zone"])
+    var data2 = emp.mydata.call(emp2,"Indian","South Zone")
+
+    document.write(data1);
+    document.write(data2);
+
+</script>

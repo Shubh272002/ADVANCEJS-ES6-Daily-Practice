@@ -1,0 +1,33 @@
+<script>
+    var emp1={
+        Name:"Ravi",
+        Age:30,
+        Dept:"Sales",
+        Desig:"Manager",
+        mydata:function(){
+            return `${this.Name} ${this.Desig}`
+        }
+    }
+
+    var emp2={
+        Name:"Mohan",
+        Age:30,
+        Dept:"Production",
+        Desig:"Supervisor"
+    }
+
+    var emp3={
+        Name:"Sachin",
+        Age:30,
+        Dept:"Finishing",
+        Desig:"General Manager"
+    }
+
+
+    var data1 = emp1.mydata.bind(emp3)
+    var data2 = emp1.mydata.bind(emp2)
+
+    document.write(data1());
+    document.write(data2());
+
+</script>
