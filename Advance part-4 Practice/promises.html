@@ -1,0 +1,26 @@
+<script>
+
+var mypromise = new Promise(function(resolve,reject){
+var user="Ram";
+
+if(user=="Ram")
+{
+    resolve("Right User")
+}
+
+else{
+    reject("Wrong User")
+}
+
+})
+
+mypromise.then(function(res){
+console.log(res);
+
+}).catch(function(err){
+
+    console.log(err)
+})
+
+
+</script>

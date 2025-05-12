@@ -1,0 +1,26 @@
+<script>
+
+
+async function abc()
+{
+    var mypromise = new Promise(function(resolve,reject){
+var user="Ram";
+
+if(user=="Ram")
+{
+    resolve("Right User")
+}
+
+else{
+    return "Wrong User";
+}
+
+    })
+
+    console.log(await mypromise);
+}
+
+abc();
+
+
+</script>
